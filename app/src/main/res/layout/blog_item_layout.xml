@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/creditcard_root"
+    android:layout_width="match_parent"
+    app:layout_constraintWidth_min="320dp"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    app:cardPreventCornerOverlap="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left">
+
+            <ImageView
+                android:id="@+id/ivUserAvatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_user_avatar"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="top"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/brand_text_secondary"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvUserDesignation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="User Designation"
+                    android:textSize="16sp"
+                    android:textColor="@color/brand_text_secondary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPostedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 min"
+                    android:textSize="14sp"
+                    android:textColor="@color/brand_text_secondary"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivMediaAvatar"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_user_avatar"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMediaContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Artical content : goes here"
+            android:singleLine="false"
+            android:lineSpacingExtra="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/brand_text_secondary"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMediaTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Artical title goes here"
+            android:singleLine="false"
+            android:lineSpacingExtra="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/brand_text_secondary"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMediaURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Artical url goes here"
+            android:singleLine="false"
+            android:lineSpacingExtra="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/brand_text_secondary"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5K Likes"
+                android:singleLine="false"
+                android:lineSpacingExtra="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/brand_text_secondary"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30K Comments"
+                android:singleLine="false"
+                android:lineSpacingExtra="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/brand_text_secondary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
